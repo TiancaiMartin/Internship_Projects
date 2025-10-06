@@ -1,0 +1,36 @@
+// Feature Engineering Pipeline
+digraph {
+	rankdir=LR size="10,6"
+	A [label="原始宏观经济数据
+（Wind导出）"]
+	B [label="计算派生指标
+（CPI同比、利差等）"]
+	C [label="Z-score标准化
+（窗口120期）"]
+	D1 [label="Growth_Score
+= 平均(失业率_z, 信用利差_z)"]
+	D2 [label="Inflation_Score
+= 平均(CPI_z, WTI_z)"]
+	D3 [label="Policy_Score
+= 平均(Fis_diff_z, 收益率曲线_斜率)"]
+	E [label="计算60/40组合收益
+= 0.6×HS300 + 0.4×IEF"]
+	F [label="计算未来12个月累计收益
+fwd_12m_return"]
+	G [label="目标变量构造
+是否为负收益 → target"]
+	H [label="最终训练数据集
+features + target"]
+	A -> B
+	B -> C
+	C -> D1
+	C -> D2
+	C -> D3
+	D1 -> H
+	D2 -> H
+	D3 -> H
+	A -> E [label="资产价格"]
+	E -> F
+	F -> G
+	G -> H
+}
