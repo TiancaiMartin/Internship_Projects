@@ -1,0 +1,175 @@
+# Internship_Projects
+
+A curated collection of quantitative research and strategy development projects from my internship work and independent extensions.
+
+This repository focuses on **systematic trading research**, **signal design**, **portfolio construction**, and **data-driven strategy evaluation**.  
+It reflects my hands-on experience in building and testing quant strategies across multiple themes, including:
+
+- index / industry rotation
+- CTA-style trend strategies
+- statistical arbitrage (cointegration-based)
+- timing models (price-volume, lead-lag)
+- rolling machine learning models for signal generation
+- research automation and data support tools
+
+---
+
+## Repository Purpose
+
+This repository is designed to showcase my workflow for quantitative research:
+
+1. **Idea generation** (market structure, factors, timing signals)
+2. **Data processing** (cleaning, alignment, feature construction)
+3. **Modeling / signal design** (statistical or ML-based)
+4. **Backtesting** (strategy simulation and evaluation)
+5. **Performance review** (return/risk diagnostics and iteration)
+
+Many folders are project-specific research modules developed during internship projects and further refined for documentation and reproducibility.
+
+---
+
+## Highlighted Project Categories
+
+### 1) Rotation Strategies
+Projects on cross-asset and cross-industry allocation using relative strength, macro/technical signals, and rotation logic.
+
+Representative folders:
+- `Broad_Base_Indexes_Rotation`
+- `Industries_Rotation`
+- `Dynamic_Indexes_Members_Prediction`
+
+**Focus areas:**
+- cross-sectional ranking
+- rebalancing rules
+- allocation logic
+- rolling evaluation
+
+---
+
+### 2) CTA / Trend-Following Strategies
+Projects inspired by CTA-style systematic investing and trend-based allocation.
+
+Representative folders:
+- `CTA-based assets management strategies`
+- `Price_Volume_Timing`
+
+**Focus areas:**
+- trend signal construction
+- price-volume timing indicators
+- portfolio-level strategy design
+- risk-adjusted performance analysis
+
+---
+
+### 3) Statistical Arbitrage & Relative Value
+Projects using statistical relationships among assets for mean-reversion or spread trading.
+
+Representative folders:
+- `Cointegration-based multivariate statistical...`
+- `pairs-kagi-indicator`
+
+**Focus areas:**
+- cointegration testing
+- spread construction
+- signal thresholds
+- trading rule design
+
+---
+
+### 4) Machine Learning / Rolling Models
+Projects applying ML methods to dynamic signal generation and regime-aware strategy design.
+
+Representative folders:
+- `Dynamic_Random_Forest(Rolling)`
+
+**Focus areas:**
+- rolling-window training
+- feature engineering
+- signal prediction
+- out-of-sample backtesting
+
+---
+
+### 5) Research Tools & Supporting Analysis
+Utilities and exploratory tools that support the research workflow.
+
+Representative folders:
+- `SSRN_Papers_Crawler`
+- `Lead_Lag_Analysis`
+- `ADX`
+
+**Focus areas:**
+- research automation
+- lead-lag relationship analysis
+- indicator testing
+- preprocessing and diagnostics
+
+---
+
+## Folder Notes (Chinese Folder Names)
+
+Some folders were originally created during development with Chinese names.  
+For clarity, here are English descriptions:
+
+- `择时策略` → **Market Timing Strategies**
+- `因果效应` → **Causal Effect Analysis**
+- `养老金管理` → **Pension Fund Management**
+- `B站视频内容爬取` → **Bilibili Video Content Scraper**
+
+These folders are kept for continuity, while this README provides an English navigation guide.
+
+---
+
+## Technical Stack
+
+### Programming
+- **Python**
+- **Jupyter Notebook**
+- **SQL** (in related data workflow projects)
+
+### Libraries / Methods (varies by project)
+- `pandas`, `numpy`
+- `scikit-learn`
+- `statsmodels`
+- `matplotlib`
+- time-series modeling
+- cointegration / statistical arbitrage
+- rolling backtesting frameworks
+- factor / timing signal construction
+
+---
+
+## What Reviewers Should Start With
+
+If you are reviewing this repository for academic or professional purposes, I recommend starting with:
+
+1. `Dynamic_Random_Forest(Rolling)`
+2. `CTA-based assets management strategies`
+3. `Cointegration-based multivariate statistical...`
+4. `Broad_Base_Indexes_Rotation`
+
+These folders best represent my strengths in:
+- quantitative modeling
+- strategy research
+- implementation-oriented testing
+- systematic workflow design
+
+---
+
+## Reproducibility Notes
+
+- Some projects rely on local or non-public datasets used during internship research.
+- In such cases, the repository still documents:
+  - project logic
+  - modeling pipeline
+  - strategy structure
+  - evaluation methodology
+
+Where possible, I provide code and notebooks in a way that makes the research workflow transparent and easy to follow.
+
+---
+
+## Disclaimer
+
+This repository is for academic and research demonstration purposes only.  
+It does **not** constitute investment advice or a live trading recommendation.
